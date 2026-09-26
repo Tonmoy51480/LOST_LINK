@@ -3,7 +3,16 @@ const path = require("path");
 require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 const isProduction = process.env.NODE_ENV === "production";
-const connectionString = process.env.DATABASE_URL;
+let connectionString = process.env.DATABASE_URL ? process.env.DATABASE_URL.trim() : "";
+if (connectionString.startsWith("psql ")) {
+  connectionString = connectionString.replace(/^psql\s+/, "").trim();
+}
+if (
+  (connectionString.startsWith("'") && connectionString.endsWith("'")) ||
+  (connectionString.startsWith('"') && connectionString.endsWith('"'))
+) {
+  connectionString = connectionString.slice(1, -1).trim();
+}
 
 const pool = new Pool({
   connectionString,
