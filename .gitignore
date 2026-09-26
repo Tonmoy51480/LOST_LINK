@@ -46,4 +46,7 @@ app-example
 /ios
 /android
 
+# build artifacts
+*.apk
+
 

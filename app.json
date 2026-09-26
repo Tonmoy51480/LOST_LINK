@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "LostLink",
-    "slug": "LostLink",
+    "name": "LOSTLINK",
+    "slug": "lostlink",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,6 +12,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.lostlink.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
