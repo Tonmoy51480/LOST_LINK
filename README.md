@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# LOSTLINK 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**LOSTLINK** is a secure, community-driven Lost & Found mobile application designed for university campuses (AIUB). It allows students, faculty, and campus security to report, discover, verify, and reclaim misplaced items efficiently.
 
-## Get started
+---
 
-1. Install dependencies
+## 📌 About the Project
 
-   ```bash
-   npm install
-   ```
+- **Campus-Centric Lost & Found:** Centralized portal for lost and found reports with location and category filtering.
+- **Safe & Verified Handover:** Ownership verification and claim management system.
+- **In-App Communication:** Real-time messaging between claimants and finders to arrange handovers safely.
+- **Role-Based Admin Oversight:** Admin management dashboard for reviewing claims and items.
+- **Repository Link:** [https://github.com/Tonmoy51480/LOST_LINK](https://github.com/Tonmoy51480/LOST_LINK)
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Technology Stack
 
-In the output, you'll find options to open the app in a
+- **Frontend:** React Native (0.81.5), Expo SDK 54, Expo Router, TypeScript
+- **Backend:** Node.js, Express.js
+- **Database:** PostgreSQL (Neon Cloud / Local)
+- **Architecture:** React Native New Architecture (Fabric + TurboModules + Hermes)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Getting Started
 
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Install Dependencies
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Start the App
+```bash
+npx expo start
+```
 
-## Learn more
+### 3. Run on Android
+```bash
+npm run android
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Build Release APK
+```bash
+cd android
+.\gradlew.bat :app:assembleRelease
+```
+The output APK will be generated at `android/app/build/outputs/apk/release/LOSTLINK.apk`.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🔗 Links & Resources
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **GitHub Repository:** [Tonmoy51480/LOST_LINK](https://github.com/Tonmoy51480/LOST_LINK)
+- **Expo Documentation:** [https://docs.expo.dev/](https://docs.expo.dev/)

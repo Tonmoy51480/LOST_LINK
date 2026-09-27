@@ -189,6 +189,17 @@ export default function ProfileScreen() {
               )
             }
           />
+
+          <ProfileMenuRow
+            icon="information-circle-outline"
+            title="About LostLink"
+            subtitle="Version, project overview and repository link"
+            onPress={() =>
+              router.push(
+                "/profile/about" as any
+              )
+            }
+          />
         </View>
 
         <View style={styles.buttonContainer}>
